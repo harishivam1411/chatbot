@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc
-from app.db import get_db
-from app.models import ChatLog
-from app.schemas import LogItem
+from app.db.database import get_db
+from app.models.db_models import ChatLog
+from app.models.schemas import LogItem
 from typing import List
 
 
